@@ -13,6 +13,11 @@ form.addEventListener("submit", (e) => {
   let createTag = document.createElement("p");
   mensage.appendChild(createTag);
 
+  // função para pedir confirmação de envio dos dados
+  function askBefore() {
+    return confirm("Deseja enviar os dados de contato?");
+  }
+
   // função para apagar mensagem que será criada pela tag p, após 5ms
   function removeMensage() {
     setTimeout(() => {
@@ -25,12 +30,12 @@ form.addEventListener("submit", (e) => {
   // faz uma verificação se os inputs estão preenchidos
   if (name !== "" || email !== "" || phone !== "") {
     mensage.style.color = "green";
+    askBefore(mensage);
     removeMensage(
       (mensage.innerHTML = "Muito bom! Em instantes entraremos em contato.")
     );
   } else {
     alert("Preencha os campos com os dados de contato");
-
   }
 
   form.reset();
