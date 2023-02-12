@@ -107,6 +107,12 @@ a {
   border-radius: 10px;
 }
 
+.box-main .box-form .mensage{
+  margin-top: 1rem;
+}
+
+
+
 .box-main .box-form .text {
   text-align: center;
   margin-bottom: 2rem;

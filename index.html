@@ -45,14 +45,14 @@
               em contato.
             </p>
           </div>
-          <form onsubmit="" id="form" class="form">
+          <form id="form" class="form">
             <div class="inputs">
               <label for="name" class="sr-only">Nome</label>
               <input
                 type="text"
                 id="name"
                 class="form-control"
-                placeholder="Nome"
+                placeholder="Nome*"
               />
             </div>
             <div class="inputs">
@@ -61,7 +61,7 @@
                 type="text"
                 id="email"
                 class="form-control"
-                placeholder="E-mail"
+                placeholder="E-mail*"
               />
             </div>
             <div class="inputs">
@@ -70,7 +70,7 @@
                 type="text"
                 id="phone"
                 class="form-control"
-                placeholder="Telefone"
+                placeholder="Telefone*"
               />
             </div>
             <div class="inputs">
@@ -84,8 +84,9 @@
                 placeholder="Escreva sua mensagem"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn">Enviar</button>
           </form>
+          <div id="mensage" class="mensage"></div>
         </div>
       </main>
 
@@ -96,5 +97,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
