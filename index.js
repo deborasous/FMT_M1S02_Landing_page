@@ -26,11 +26,11 @@ form.addEventListener("submit", (e) => {
   if (name !== "" || email !== "" || phone !== "") {
     mensage.style.color = "green";
     removeMensage(
-      (mensage.innerHTML = "Mensagem enviada. Entraremos em contato em breve.")
+      (mensage.innerHTML = "Muito bom! Em instantes entraremos em contato.")
     );
   } else {
-    mensage.innerHTML = "Preencha todos os campos";
-    mensage.style.color = "red";
+    alert("Preencha os campos com os dados de contato");
+
   }
 
   form.reset();
