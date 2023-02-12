@@ -4,39 +4,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
     <title>Integra Pix</title>
   </head>
   <body>
-    <main>
-      <div class="container">
-        <div class="img"><img src="./assets/image.jpg" alt="" /></div>
-        <div class="content">
-          <div class="text">
-            <h1>Integra PIX</h1>
-            <h2>Integre o PIX nas suas vendas.</h2>
+    <div class="container">
+      <header class="content">
+        <img src="./assets/image.png" class="img" alt="" />
+        <div class="box-conteudo">
+          <div class="box-gradient container">
+            <h2>Inte<span>pix</span></h2>
+            <div class="box-header">
+              <div class="text">
+                <h1>Integra pix</h1>
+                <p>
+                  Transações mais seguras é na Intepix. Transferências e
+                  recebimentos descomplicados. Consulte as transações no mesmo
+                  instante em que aconterem.
+                </p>
+              </div>
+              <a href="#box-form" class="btn">Começar a usar</a>
+            </div>
           </div>
-          <form action="#" id="form">
+        </div>
+      </header>
+      <main class="box-main">
+        <div class="box-form" id="box-form">
+          <div class="text">
+            <legend>Envie uma mensagem para nossa equipe</legend>
+            <p>
+              Envie os dados aabaixo para que nossos especialistas possam entrar
+              em contato.
+            </p>
+          </div>
+          <form onsubmit="" id="form" class="form">
             <div class="inputs">
-              <label for="name">Nome</label>
-              <input type="text" id="name" placeholder="Nome" />
+              <label for="name" class="sr-only">Nome</label>
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Nome"
+              />
             </div>
             <div class="inputs">
-              <label for="email">E-mail</label>
-              <input type="text" id="email" placeholder="E-mail" />
+              <label for="email" class="sr-only">E-mail</label>
+              <input
+                type="text"
+                id="email"
+                class="form-control"
+                placeholder="E-mail"
+              />
             </div>
             <div class="inputs">
-              <label for="phone">Telefone</label>
-              <input type="text" id="phone" placeholder="Telefone" />
+              <label for="phone" class="sr-only">Telefone</label>
+              <input
+                type="text"
+                id="phone"
+                class="form-control"
+                placeholder="Telefone"
+              />
             </div>
-            <button type="submit" class="btn">Enviar</button>
+            <div class="inputs">
+              <label for="form-textarea" class="sr-only"
+                >Exemplo de textarea</label
+              >
+              <textarea
+                class="form-control"
+                id="textArea"
+                rows="3"
+                placeholder="Escreva sua mensagem"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>
-        <p>Debora Sousa &#169; 2023</p>
-      </div>
-    </footer>
+      </main>
+
+      <footer class="box-footer">
+        <h2>Inte<span>pix</span></h2>
+        <div>
+          <p>Debora Sousa &#169; 2023</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
