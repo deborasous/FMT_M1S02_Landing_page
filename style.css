@@ -78,7 +78,7 @@ a {
 }
 
 .box-header {
-  max-width: 600px;
+  max-width: 620px;
   height: auto;
   position: relative;
   z-index: 10;
@@ -107,11 +107,10 @@ a {
   border-radius: 10px;
 }
 
-.box-main .box-form .mensage{
+.box-main .box-form .mensage {
   margin-top: 1rem;
+  text-align: center;
 }
-
-
 
 .box-main .box-form .text {
   text-align: center;
@@ -134,9 +133,13 @@ a {
   gap: 1.2rem;
 }
 
+.box-form #name {
+  text-transform: capitalize;
+}
+
 .box-main .box-form .form-control {
   width: 100%;
-  padding: 10px 1rem;
+  padding: 12px 1rem;
   border: 1px solid #bbb6b5;
   border-radius: 5px;
   outline: none;

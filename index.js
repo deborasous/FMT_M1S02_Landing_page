@@ -19,19 +19,19 @@ form.addEventListener("submit", (e) => {
       if (mensage.parentNode) {
         mensage.parentNode.removeChild(mensage);
       }
-    }, 5000);
+    }, 7000);
   }
 
   // faz uma verificação se os inputs estão preenchidos
-  if (name !== "" || email !== "" || phone !== "") {
+  if (name !== "" && email !== "" && phone !== "") {
     mensage.style.color = "green";
     removeMensage(
       (mensage.innerHTML = "Muito bom! Em instantes entraremos em contato.")
     );
   } else {
     alert("Preencha os campos com os dados de contato");
-
   }
+  alert(`${name} obrigada por sua mensagem. `);
 
   form.reset();
 });
